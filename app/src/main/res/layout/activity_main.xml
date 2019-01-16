@@ -70,4 +70,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="165dp"
         android:text="@string/rom" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="217dp"
+        app:srcCompat="@drawable/logo" />
 </RelativeLayout>
