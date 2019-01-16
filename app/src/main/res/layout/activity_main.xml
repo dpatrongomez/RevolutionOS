@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btweb"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/web" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btabout"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/btweb"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/about" />
+
+    <Button
+        android:id="@+id/btfaq"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/btweb"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="135dp"
+        android:text="@string/faq" />
+
+    <Button
+        android:id="@+id/bterror"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/btabout"
+        android:layout_alignBottom="@+id/btfaq"
+        android:text="@string/error" />
+
+    <Button
+        android:id="@+id/bttelegram"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/btweb"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="215dp"
+        android:text="@string/telegram" />
+
+    <Button
+        android:id="@+id/btdonate"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/btabout"
+        android:layout_alignBottom="@+id/bttelegram"
+        android:text="@string/donate" />
+
+    <Button
+        android:id="@+id/btrom"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="@string/rom" />
+</RelativeLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RevolutionOS</string>
+    <string name="about">Quienes Somos</string>
+    <string name="web">Página Web</string>
+    <string name="faq">FAQ MIUI</string>
+    <string name="error">Reportar Fallos</string>
+    <string name="telegram">Telegram</string>
+    <string name="donate">Donación Voluntaria</string>
+    <string name="rom"><![CDATA[Roms&Extras MIUI]]></string>
 </resources>
