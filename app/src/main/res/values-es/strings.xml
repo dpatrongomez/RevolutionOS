@@ -7,5 +7,9 @@
     <string name="error">Reportar Fallos</string>
     <string name="telegram">Telegram</string>
     <string name="donate">Donación Voluntaria</string>
-    <string name="rom"><![CDATA[Roms&Extras MIUI]]></string>
+    <string name="rom"><![CDATA[Roms & Extras]]></string>
+    <string name="logo">Logo</string>
+    <string name="settings">Ajustes</string>
+    <string name="share">Compartir</string>
+    <string name="info">Info</string>
 </resources>

@@ -7,91 +7,149 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/btweb"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="55dp"
-        android:text="@string/web" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/btabout"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignBottom="@+id/btweb"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="0dp"
-        android:text="@string/about" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/btfaq"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignStart="@+id/btweb"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="135dp"
-        android:text="@string/faq" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/bterror"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignEnd="@+id/btabout"
-        android:layout_alignBottom="@+id/btfaq"
-        android:text="@string/error" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/bttelegram"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignStart="@+id/btweb"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="215dp"
-        android:text="@string/telegram" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/btdonate"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignEnd="@+id/btabout"
-        android:layout_alignBottom="@+id/bttelegram"
-        android:text="@string/donate" />
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:id="@+id/btrom"
-        android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="165dp"
-        android:text="@string/rom" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="217dp"
-        app:srcCompat="@drawable/logo" />
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btweb"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btrom"
+        android:layout_alignEnd="@+id/btrom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/web"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_marginTop="180dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btabout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/about"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btfaq"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/faq"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/bterror"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/error"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/bttelegram"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/telegram"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"/>
+
+    <Button
+        android:id="@+id/btdonate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/donate"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"/>
+
+    <Button
+        android:id="@+id/btrom"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btdonate"
+        android:layout_alignEnd="@+id/btdonate"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:text="@string/rom"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:layout_marginTop="540dp"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_info_black_24dp"
+        android:contentDescription="@string/info" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/imageButton1"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_share_black_24dp"
+        android:contentDescription="@string/share" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_settings_black_24dp"
+        android:contentDescription="@string/settings" />
+
 </RelativeLayout>
