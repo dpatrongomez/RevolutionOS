@@ -17,6 +17,7 @@
         android:layout_marginTop="20dp"/>
 
     <Button
+        android:onClick="sendWeb"
         android:id="@+id/btweb"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -44,6 +45,7 @@
         android:layout_marginTop="240dp"/>
 
     <Button
+        android:onClick="sendFaq"
         android:textAllCaps="false"
         android:id="@+id/btfaq"
         android:layout_width="300dp"
@@ -56,6 +58,7 @@
         android:layout_marginTop="300dp"/>
 
     <Button
+        android:onClick="sendError"
         android:textAllCaps="false"
         android:id="@+id/bterror"
         android:layout_width="300dp"
@@ -92,6 +95,7 @@
         android:layout_marginTop="480dp"/>
 
     <Button
+        android:onClick="sendRom"
         android:id="@+id/btrom"
         android:layout_width="300dp"
         android:layout_height="50dp"
