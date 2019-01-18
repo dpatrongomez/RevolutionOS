@@ -17,10 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btweb = findViewById(R.id.btweb);
         Button btabout = findViewById(R.id.btabout);
-        Button btfaq = findViewById(R.id.btfaq);
-        Button bterror = findViewById(R.id.bterror);
         Button bttelegram = findViewById(R.id.bttelegram);
         Button btdonate = findViewById(R.id.btdonate);
 
@@ -31,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+        bttelegram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Telegram.class);
+                startActivity(intent);
+            }
+        });
+
     }
     public void sendWeb(View view) {
         Intent intent = new Intent(MainActivity.this, WebViewClass.class);
