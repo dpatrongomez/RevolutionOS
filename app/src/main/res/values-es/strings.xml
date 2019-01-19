@@ -17,4 +17,5 @@
     <string name="miui_downloads">Descargas MIUI</string>
     <string name="aosp_support">Soporte AOSP</string>
     <string name="english_group">Grupo Inglés</string>
+    <string name="sharetext">Déjame recomendarte esta aplicación.</string>
 </resources>

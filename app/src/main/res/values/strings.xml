@@ -17,4 +17,5 @@
     <string name="miui_downloads">MIUI Downloads</string>
     <string name="aosp_support">AOSP Support</string>
     <string name="english_group">English Group</string>
+    <string name="sharetext">Let me recommend you this application</string>
 </resources>
