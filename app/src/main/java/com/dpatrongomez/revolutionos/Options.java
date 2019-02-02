@@ -1,61 +1,63 @@
 package com.dpatrongomez.revolutionos;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.dpatrongomez.revolutionos.MainActivity.numero;
+
+
 public class Options extends AppCompatActivity {
 
-    @SuppressLint("SetJavaScriptEnabled")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_telegram);
-        Button bttelegram1 = findViewById(R.id.bttelegram1);
-        Button bttelegram2 = findViewById(R.id.bttelegram2);
-        Button bttelegram3 = findViewById(R.id.bttelegram3);
-        Button bttelegram4 = findViewById(R.id.bttelegram4);
-        Button bttelegram5 = findViewById(R.id.bttelegram5);
+        setContentView(R.layout.activity_options);
+        Button statsmiui = findViewById(R.id.btmiui);
+        Button statsaosp = findViewById(R.id.btaosp);
+        statsmiui.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Options.this, WebViewClass.class);
+                String message = "6";
+                intent.putExtra(numero, message);
+                startActivity(intent);
+            }
+        });
+        statsaosp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Options.this, WebViewClass.class);
+                String message = "7";
+                intent.putExtra(numero, message);
+                startActivity(intent);
+            }
+        });
 
 
-        bttelegram1.setOnClickListener(new View.OnClickListener() {
+
+
+        ImageButton share = findViewById(R.id.share);
+        share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/RevolutionMIUI"));
-                startActivity(browserIntent);
-            }
-        });
-        bttelegram2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://t.me/RevolutionNews"));
-                startActivity(browserIntent);
-            }
-        });
-        bttelegram3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://t.me/ROSDownloads"));
-                startActivity(browserIntent);
-            }
-        });
-        bttelegram4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/RevolutionAOSP"));
-                startActivity(browserIntent);
-            }
-        });
-        bttelegram5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/RevolutionMIUIen"));
-                startActivity(browserIntent);
+                try {
+                    Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                    shareIntent.setType("text/plain");
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "@string/app_name");
+                    String shareMessage= getString(R.string.sharetext);
+                    shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID +"\n\n";
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                    startActivity(Intent.createChooser(shareIntent, "choose one"));
+                } catch(Exception e) {
+                    //e.toString();
+                }
             }
         });
 

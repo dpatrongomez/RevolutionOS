@@ -47,6 +47,12 @@ public class WebViewClass extends AppCompatActivity {
                 break;
             case 5:
                 urlweb = "https://os.revtechs.me/sobre-nosotros/";
+                break;
+            case 6:
+                urlweb = "https://stats.revtechs.me/stats_es.php";
+                break;
+            case 7:
+                urlweb = "https://stats.revtechs.me/aosp/stats_es.php";
             default:
 
                 break;

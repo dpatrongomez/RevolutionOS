@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button bttelegram = findViewById(R.id.bttelegram);
         Button btdonate = findViewById(R.id.btdonate);
         ImageButton share = findViewById(R.id.share);
+        ImageButton option = findViewById(R.id.options);
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
                 } catch(Exception e) {
                     //e.toString();
                 }
+            }
+        });
+        option.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Options.class);
+                startActivity(intent);
             }
         });
 
@@ -91,8 +99,5 @@ public class MainActivity extends AppCompatActivity {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://os.revtechs.me/descargas-miui/"));
         startActivity(browserIntent);
     }
-
-
-
 
 }

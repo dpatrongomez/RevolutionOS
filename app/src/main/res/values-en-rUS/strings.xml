@@ -21,4 +21,7 @@
     <string name="dl_downloading">Downloading File…</string>
     <string name="dl_downloading2">Downloading File</string>
     <string name="aboutlabel">About us</string>
+    <string name="options">Stats</string>
+    <string name="stats_miui">Stats MIUI</string>
+    <string name="stats_aosp">Stats AOSP</string>
 </resources>
