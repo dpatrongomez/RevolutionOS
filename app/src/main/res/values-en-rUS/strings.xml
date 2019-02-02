@@ -18,4 +18,6 @@
     <string name="aosp_support">AOSP Support</string>
     <string name="english_group">English Group</string>
     <string name="sharetext">Let me recommend you this application</string>
+    <string name="dl_downloading">Descargando Archivo…</string>
+    <string name="dl_downloading2">Descargando Archivo</string>
 </resources>
