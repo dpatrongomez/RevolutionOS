@@ -53,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btabout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void sendWeb(View view) {
@@ -74,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void sendRom(View view) {
-        Intent intent = new Intent(MainActivity.this, WebViewClass.class);
-        String message = "4";
-        intent.putExtra(numero, message);
-        startActivity(intent);
+       // Intent intent = new Intent(MainActivity.this, WebViewClass.class);
+       // String message = "4";
+       // intent.putExtra(numero, message);
+       // startActivity(intent);
+
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://os.revtechs.me/descargas-miui/"));
+        startActivity(browserIntent);
     }
 
 

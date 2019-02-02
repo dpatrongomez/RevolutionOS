@@ -85,17 +85,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="420dp"/>
 
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
-        android:contentDescription="Back" />
-
 </RelativeLayout>
     <TableRow
         android:gravity="center"

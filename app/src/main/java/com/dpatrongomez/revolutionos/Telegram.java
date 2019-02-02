@@ -17,19 +17,13 @@ public class Telegram extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telegram);
-        ImageButton back = findViewById(R.id.back);
         Button bttelegram1 = findViewById(R.id.bttelegram1);
         Button bttelegram2 = findViewById(R.id.bttelegram2);
         Button bttelegram3 = findViewById(R.id.bttelegram3);
         Button bttelegram4 = findViewById(R.id.bttelegram4);
         Button bttelegram5 = findViewById(R.id.bttelegram5);
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
         bttelegram1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
