@@ -45,6 +45,8 @@ public class WebViewClass extends AppCompatActivity {
             case 4:
                 urlweb = "https://os.revtechs.me/descargas-miui/";
                 break;
+            case 5:
+                urlweb = "https://os.revtechs.me/sobre-nosotros/";
             default:
 
                 break;

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Telegram extends AppCompatActivity {
+public class Options extends AppCompatActivity {
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override

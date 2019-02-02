@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
         btabout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, About.class);
+                Intent intent = new Intent(MainActivity.this, WebViewClass.class);
+                String message = "5";
+                intent.putExtra(numero, message);
                 startActivity(intent);
             }
         });
