@@ -100,10 +100,8 @@ public class WebViewClass extends AppCompatActivity {
 
     }
     public boolean check_permission(int permission){
-        switch(permission){
-            case 1:
-                return ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
-
+        if (permission == 1) {
+            return ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
         }
         return false;
     }
